@@ -31,7 +31,7 @@ Spring AI `2.0.0-M2+` (milestone), `org.springaicommunity:spring-ai-agent-utils`
 ## Phase & gates (CRPE-R)
 
 - **Concept** — LOCKED 2026-06-22 (this conversation).
-- **Research** — IN PROGRESS. Deliverable: `research/2026-06-22-spring-ai-agentic-patterns-brief.md` (done, v1). Round-out needed: Mongo Atlas Vector Store in Spring AI, Spring AI vector-store + RAG advisor reference docs, full AutoMemoryTools API surface, A2A specifics.
+- **Research** — DONE (v2). Deliverables: `research/2026-06-22-spring-ai-agentic-patterns-brief.md` (v1, the series + token read) and `research/2026-06-22-spring-ai-api-deep-dive.md` (v2, closes all 6 gaps via a 3-scout fan-out: full AutoMemoryTools API, Mongo Atlas Vector, RAG advisors, Tool Search Tool, A2A-vs-subagents, sanctioned backend routing). v2 ends with concrete design implications for gate-1.
 - **Plan (gate-1 grill)** — NEXT. Design the long-term-memory architecture, one question at a time, zero TBDs.
 - **Execute → v0** — design spec + data-free reference prototype here; company build on the work seat.
 - **Retro** — capability write-back to the competency matrix.
