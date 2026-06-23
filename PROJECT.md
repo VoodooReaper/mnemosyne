@@ -32,13 +32,14 @@ Spring AI `2.0.0-M2+` (milestone), `org.springaicommunity:spring-ai-agent-utils`
 
 - **Concept** — LOCKED 2026-06-22 (this conversation).
 - **Research** — DONE (v2). Deliverables: `research/2026-06-22-spring-ai-agentic-patterns-brief.md` (v1, the series + token read) and `research/2026-06-22-spring-ai-api-deep-dive.md` (v2, closes all 6 gaps via a 3-scout fan-out: full AutoMemoryTools API, Mongo Atlas Vector, RAG advisors, Tool Search Tool, A2A-vs-subagents, sanctioned backend routing). v2 ends with concrete design implications for gate-1.
-- **Plan (gate-1 grill)** — NEXT. Design the long-term-memory architecture, one question at a time, zero TBDs.
-- **Execute → v0** — design spec + data-free reference prototype here; company build on the work seat.
-- **Retro** — capability write-back to the competency matrix.
+- **Plan (gate-1 grill)** — DONE. `plans/2026-06-22-v0-longterm-memory-architecture.md` APPROVED 2026-06-22, 7 ACs.
+- **Execute → v0** — IN PROGRESS (built 2026-06-22, fresh-session #115 path). v0 deliverable shipped to `design/` (5 specs + overview) + `reference/` (design-stage Java + schema + deterministic gate). Adversary pass + Ryan's gate-2 morning review PENDING. No compile/run claim (#139).
+- **Retro** — capability write-back to the competency matrix (after gate-2).
 
 ## Decisions (project-local)
 
 - D1 (2026-06-22): Project created, name `mnemosyne`, personal design-repo boundary approved by Ryan end-to-end.
+- D2 (2026-06-22): v0 design spec built. Architecture = three advisors on one ChatClient (file canon + vector RAG + session) with a deterministic hardening gate as the wedge over the framework baseline. Memory-layer-only (gate-1 Q2); departments get a roadmap note. Artifacts: `design/00..05`, `reference/`. Design-stage; no compile/run claim (#139).
 
 ## Open questions for gate-1
 
@@ -51,5 +52,6 @@ Spring AI `2.0.0-M2+` (milestone), `org.springaicommunity:spring-ai-agent-utils`
 
 ## Next actions
 
-1. Round out the research brief (the 4 gaps above).
-2. Run the gate-1 grill.
+1. Ryan's gate-2 morning review of the v0 design spec + reference code (`design/` + `reference/`).
+2. After gate-2: retro / competency write-back; on the work seat, confirm community-module API names, pick the backend (`design/03`), and stand up a compiling build under the output-reality gate (#139).
+3. Confirm-at-work items still open: backend/tenancy policy; company corpus substrate (SQL/Mongo/both).
